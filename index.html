@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul Perez Portfolio</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1d3557;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 1.37rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #1d3557;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background: #457b9d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d3557;
+      border-color: #061427;
+    }
+
+    .fact-box {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    section div {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:rgb(0, 0, 238);
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paul Joel D. Perez</h1>
+    <p>Aspiring Software Engineer | Web Dev & Game Dev Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm a recent high school graduate and an incoming CS student. I'm passionate about programming, game development, and learning new technologies. I'm currently exploring front-end web development to expand my skillset.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript (Learning)</li>
+      <li>C#, C++</li>
+      <li>Unity Game Engine</li>
+      <li>WordPress (Learning)</li>
+      <li>110 WPM Typing Speed</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+        <li>80-hour OJT at local shop TJRS Computer Shop</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div>
+      <h3>🎄 Christmas Game</h3>
+      <p>A festive top-down shooter made in Unity. Defend the holidays with fun and chaos. <br>
+      <a href="https://stellarr2.itch.io/christmas-game" target="_blank">Play on itch.io →</a></p>
+    </div>
+    
+    <div>
+      <h3>📦 Delivery Cannon</h3>
+      <p>A chaotic 2D cannon delivery game with physics-based mechanics. <br>
+      <a href="https://stellarr2.itch.io/delivery-cannon" target="_blank">Play on itch.io →</a></p>
+    </div>
+  </section>
+  
+
+  <section>
+    <h2>Fun Fact</h2>
+    <button onclick="showFact()">Click me!</button>
+    <p class="fact-box" id="funFact"></p>
+  </section>
+
+  <script>
+    function showFact() {
+      const facts = [
+        "I once gave a speech as Student President in front of my whole school.",
+        "I can type 110 words per minute!",
+        "I taught myself game development and programming during senior high school.",
+        "I like painting and chess in my free time.",
+        "I’m building my future in tech."
+      ];
+      const randomFact = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById("funFact").textContent = randomFact;
+    }
+  </script>
+
+</body>
+</html>
